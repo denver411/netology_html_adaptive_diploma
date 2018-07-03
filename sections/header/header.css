@@ -162,8 +162,10 @@
     border-radius: 77px;
   }
 }
-.applications__block_google-play {
-  padding: 17px 58px;
+@media (min-width: 641px) {
+  .applications__block_google-play {
+    padding: 17px 58px;
+  }
 }
 .applications__logo {
   fill: #ffffff;
