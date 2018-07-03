@@ -13,6 +13,14 @@ body {
 }
 .container {
   max-width: 1920px;
+  margin: 0 auto;
+}
+@media (min-width: 961px) {
+  .wrapper {
+    min-width: 961px;
+    max-width: 1534px;
+    margin: 0 auto;
+  }
 }
 a {
   text-decoration: none;
