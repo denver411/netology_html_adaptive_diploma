@@ -1,42 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
-
 html {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
-
-body{
+body {
   width: 100vw;
 }
-
 .container {
   max-width: 1920px;
   margin: 0 auto;
 }
-
-.wrapper {
-  @media (min-width: 961px){
+@media (min-width: 961px) {
+  .wrapper {
     min-width: 961px;
     max-width: 1534px;
     margin: 0 auto;
   }
 }
-
 a {
   text-decoration: none;
-}
-
-// @import url('../sections/header/header.less');
-
-@media (max-width: 640px){
-}
-@media (min-width: 641px) and (max-width: 960px) {
-}
-@media (min-width: 961px){
 }
