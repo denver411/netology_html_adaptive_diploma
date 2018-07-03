@@ -20,7 +20,7 @@
 @media (max-width: 640px) {
   .header {
     min-height: 568px;
-    padding: 5% 8% 12%;
+    padding: 33px 20px 85px;
     background-image: url(../../images/football_767.jpg);
   }
 }
@@ -28,7 +28,7 @@
   .header {
     min-height: 960px;
     min-width: 660px;
-    padding: 10% 6% 25%;
+    padding: 38px 42px 91px;
     background-image: url(../../images/football_1280.jpg);
   }
 }
@@ -36,7 +36,7 @@
   .header {
     min-height: 960px;
     min-width: 1520px;
-    padding: 2% 10% 6%;
+    padding: 45px 0px 110px;
     background-image: url(../../images/football_1920.jpg);
   }
 }
@@ -73,17 +73,22 @@
 }
 @media (max-width: 640px) {
   .header__title {
+    margin-top: 30px;
     font-size: 1.75rem;
   }
 }
 @media (min-width: 641px) and (max-width: 960px) {
   .header__title {
+    margin-left: 28px;
     font-size: 4rem;
+    line-height: 1.2;
   }
 }
 @media (min-width: 961px) {
   .header__title {
+    margin-top: 31px;
     font-size: 5.625rem;
+    line-height: 1;
   }
 }
 .header__title_second-row {
@@ -91,11 +96,17 @@
 }
 @media (max-width: 640px) {
   .header__title_second-row {
-    margin-top: 30px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+  .header__title_second-row {
+    margin-bottom: 138px;
   }
 }
 @media (min-width: 961px) {
   .header__title_second-row {
+    margin-top: 0;
     text-align: right;
   }
 }
@@ -128,7 +139,7 @@
 @media (max-width: 640px) {
   .applications__block {
     width: 100%;
-    padding: 9px 25%;
+    padding: 5px 82px;
     font-size: 0.5rem;
     border-radius: 38px;
   }
@@ -137,7 +148,7 @@
   .applications__block {
     width: 311px;
     margin: 0 15px;
-    padding: 26px 40px;
+    padding: 17px 40px;
     font-size: 0.875rem;
     border-radius: 77px;
   }
@@ -146,10 +157,13 @@
   .applications__block {
     width: 311px;
     margin: 0 25px;
-    padding: 26px 40px;
+    padding: 17px 40px;
     font-size: 0.875rem;
     border-radius: 77px;
   }
+}
+.applications__block_google-play {
+  padding: 17px 58px;
 }
 .applications__logo {
   fill: #ffffff;

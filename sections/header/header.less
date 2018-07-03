@@ -18,19 +18,19 @@
   }
   @media (max-width: 640px) {
     min-height: 568px;
-    padding: 5% 8% 12%;
+    padding: 33px 20px 85px;
     background-image: url(../../images/football_767.jpg);
   }
   @media (min-width: 641px) and (max-width: 960px) {
     min-height: 960px;
     min-width: 660px;
-    padding: 10% 6% 25%;
+    padding: 38px 42px 91px;
     background-image: url(../../images/football_1280.jpg);
   }
   @media (min-width: 961px) {
     min-height: 960px;
     min-width: 1520px;
-    padding: 2% 10% 6%;
+    padding: 45px 0px 110px;
     background-image: url(../../images/football_1920.jpg);
   }
   &__wrapper {
@@ -58,22 +58,30 @@
     text-align: left;
     font-weight: bold;
     @media (max-width: 640px) {
+      margin-top: 30px;
       font-size: 1.75rem;
     }
     @media (min-width: 641px) and (max-width: 960px) {
+      margin-left: 28px;
       font-size: 4rem;
+      line-height: 1.2;
     }
     @media (min-width: 961px) {
+      margin-top: 31px;
       font-size: 5.625rem;
+      line-height: 1;
     }
     &_second-row {
       padding-left: 1.5em;
       @media (max-width: 640px) {
-        margin-top: 30px;
+        margin-top: 10px;
+      }
+      @media (min-width: 641px) and (max-width: 960px) {
+        margin-bottom: 138px;
       }
       @media (min-width: 961px) {
+        margin-top: 0;
         text-align: right;
-        ;
       }
     }
   }
@@ -103,23 +111,26 @@
     box-shadow: 8px 13.9px 24px 0 rgb(10, 14, 52);
     @media (max-width: 640px) {
       width: 100%;
-      padding: 9px 25%;
+      padding: 5px 82px;
       font-size: 0.5rem;
       border-radius: 38px;
     }
     @media (min-width: 641px) and (max-width: 960px) {
       width: 311px;
       margin: 0 15px;
-      padding: 26px 40px;
+      padding: 17px 40px;
       font-size: 0.875rem;
       border-radius: 77px;
     }
     @media (min-width: 961px) {
       width: 311px;
       margin: 0 25px;
-      padding: 26px 40px;
+      padding: 17px 40px;
       font-size: 0.875rem;
       border-radius: 77px;
+    }
+    &_google-play {
+      padding: 17px 58px;
     }
   }
   &__logo {
@@ -147,6 +158,4 @@
       @media (max-width: 640px) {}
     }
   }
-  &_app-store {}
-  &__google-play {}
 }
