@@ -4,6 +4,9 @@
     @media (min-width: 641px) and (max-width: 960px) {
       padding-left: 291px;
     }
+    @media (min-width: 961px){
+
+    }
   }
   @media (max-width: 640px) {
     background-position: center 80px;
@@ -13,9 +16,12 @@
     background-position: -162px 93px;
     background-image: url(../../images/footballer_497.png);
   }
-  @media (min-width: 961px) {}
+  @media (min-width: 961px) {
+    background-position: 29% 28px;
+    background-image: url(../../images/footballer_566.png);
+  }
   &__wrapper {
-    // padding-left: 291px;
+    max-width: unset;
   }
   &__title {
     @media (max-width: 640px) {
@@ -27,7 +33,10 @@
       padding-top: 58px;
       padding-left: 291px;
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+      padding-top: 88px;
+      padding-left: 52.5%;
+    }
   }
   &__connection {
     @media (max-width: 640px) {
@@ -41,7 +50,10 @@
     @media (min-width: 641px) and (max-width: 960px) {
       padding-bottom: 33px;
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+
+      padding: 75px 0 56px 52.5%;
+    }
   }
   &__collaboration {
     @media (max-width: 640px) {
@@ -57,7 +69,12 @@
       padding-top: 30px;
       background-color: rgb(245, 244, 249);
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+      position: relative;
+      z-index: -1;
+      padding: 48px 0 94px 52.5%;
+      background-color: rgb(245, 244, 249);
+    }
   }
   &__growth {
     background-color: rgb(94, 66, 176);
@@ -72,7 +89,12 @@
       padding-top: 32px;
       padding-bottom: 31px;
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+      position: relative;
+      z-index: -1; 
+      padding: 48px 0 87px 52.5%;
+      background-color: rgb(94, 66, 176);
+    }
   }
 }
 
@@ -168,16 +190,18 @@
 
 .h2-title {
   text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
   color: rgb(231, 231, 231);
   @media (max-width: 640px) {
     font-size: 3.125rem;
-    font-weight: bold;
-    text-align: left;
   }
   @media (min-width: 641px) and (max-width: 960px) {
     font-size: 5rem;
   }
-  @media (min-width: 961px) {}
+  @media (min-width: 961px) {
+    font-size: 5rem;
+  }
 }
 
 .article {
@@ -190,20 +214,30 @@
     color: rgb(193, 193, 193);
     span {
       position: absolute;
-      top: 5px;
+      
       left: 0;
       font-weight: bold;
       color: rgb(0, 0, 0);
-      border-bottom: solid 2px rgb(94, 66, 176);
+      
       @media (max-width: 640px) {
+        top: 5px;
         font-size: 0.875rem;
         letter-spacing: 0.7px;
+        border-bottom: solid 4px rgb(94, 66, 176);
       }
       @media (min-width: 641px) and (max-width: 960px) {
+        top: 5px;
         font-size: 1.125rem;
         letter-spacing: 0.9px;
+        border-bottom: solid 5px rgb(94, 66, 176);
       }
-      @media (min-width: 961px) {}
+      @media (min-width: 961px) {
+        top: 6px;
+        padding-bottom: 3px;
+        font-size: 1.125rem;
+        letter-spacing: 0.9px;
+        border-bottom: solid 5px rgb(94, 66, 176);
+      }
     }
     @media (max-width: 640px) {
       padding-left: 25px;
@@ -215,10 +249,14 @@
       font-size: 2rem;
       letter-spacing: 1.6px;
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+      padding-left: 35px;
+      font-size: 2.25rem;
+        letter-spacing: 1.8px;
+    }
     &_growth {
       span {
-        border-bottom: solid 2px rgb(255, 255, 255);
+        border-bottom: solid 4px rgb(255, 255, 255);
       }
     }
   }
@@ -235,7 +273,11 @@
       font-size: 1rem;
       line-height: 1.75;
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+      margin-top: 16px;
+      font-size: 1rem;
+      line-height: normal;
+    }
     &_growth {
       color: rgb(255, 255, 255);
     }

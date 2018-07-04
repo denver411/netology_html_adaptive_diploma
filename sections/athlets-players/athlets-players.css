@@ -18,6 +18,15 @@
     background-image: url(../../images/footballer_497.png);
   }
 }
+@media (min-width: 961px) {
+  .athlets {
+    background-position: 29% 28px;
+    background-image: url(../../images/footballer_566.png);
+  }
+}
+.athlets__wrapper {
+  max-width: unset;
+}
 @media (max-width: 640px) {
   .athlets__title {
     min-height: 306px;
@@ -29,6 +38,12 @@
     min-height: 195px;
     padding-top: 58px;
     padding-left: 291px;
+  }
+}
+@media (min-width: 961px) {
+  .athlets__title {
+    padding-top: 88px;
+    padding-left: 52.5%;
   }
 }
 @media (max-width: 640px) {
@@ -44,6 +59,11 @@
 @media (min-width: 641px) and (max-width: 960px) {
   .athlets__connection {
     padding-bottom: 33px;
+  }
+}
+@media (min-width: 961px) {
+  .athlets__connection {
+    padding: 75px 0 56px 52.5%;
   }
 }
 @media (max-width: 640px) {
@@ -63,6 +83,14 @@
     background-color: #f5f4f9;
   }
 }
+@media (min-width: 961px) {
+  .athlets__collaboration {
+    position: relative;
+    z-index: -1;
+    padding: 48px 0 94px 52.5%;
+    background-color: #f5f4f9;
+  }
+}
 .athlets__growth {
   background-color: #5e42b0;
 }
@@ -79,6 +107,14 @@
     z-index: -1;
     padding-top: 32px;
     padding-bottom: 31px;
+  }
+}
+@media (min-width: 961px) {
+  .athlets__growth {
+    position: relative;
+    z-index: -1;
+    padding: 48px 0 87px 52.5%;
+    background-color: #5e42b0;
   }
 }
 .players {
@@ -178,16 +214,21 @@
 }
 .h2-title {
   text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
   color: #e7e7e7;
 }
 @media (max-width: 640px) {
   .h2-title {
     font-size: 3.125rem;
-    font-weight: bold;
-    text-align: left;
   }
 }
 @media (min-width: 641px) and (max-width: 960px) {
+  .h2-title {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 961px) {
   .h2-title {
     font-size: 5rem;
   }
@@ -201,22 +242,33 @@
 }
 .article__title span {
   position: absolute;
-  top: 5px;
   left: 0;
   font-weight: bold;
   color: #000000;
-  border-bottom: solid 2px #5e42b0;
 }
 @media (max-width: 640px) {
   .article__title span {
+    top: 5px;
     font-size: 0.875rem;
     letter-spacing: 0.7px;
+    border-bottom: solid 4px #5e42b0;
   }
 }
 @media (min-width: 641px) and (max-width: 960px) {
   .article__title span {
+    top: 5px;
     font-size: 1.125rem;
     letter-spacing: 0.9px;
+    border-bottom: solid 5px #5e42b0;
+  }
+}
+@media (min-width: 961px) {
+  .article__title span {
+    top: 6px;
+    padding-bottom: 3px;
+    font-size: 1.125rem;
+    letter-spacing: 0.9px;
+    border-bottom: solid 5px #5e42b0;
   }
 }
 @media (max-width: 640px) {
@@ -233,8 +285,15 @@
     letter-spacing: 1.6px;
   }
 }
+@media (min-width: 961px) {
+  .article__title {
+    padding-left: 35px;
+    font-size: 2.25rem;
+    letter-spacing: 1.8px;
+  }
+}
 .article__title_growth span {
-  border-bottom: solid 2px #ffffff;
+  border-bottom: solid 4px #ffffff;
 }
 .article__text {
   text-align: left;
@@ -252,6 +311,13 @@
     margin-top: 16px;
     font-size: 1rem;
     line-height: 1.75;
+  }
+}
+@media (min-width: 961px) {
+  .article__text {
+    margin-top: 16px;
+    font-size: 1rem;
+    line-height: normal;
   }
 }
 .article__text_growth {
