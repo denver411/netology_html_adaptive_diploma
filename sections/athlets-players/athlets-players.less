@@ -80,7 +80,12 @@
   background-repeat: no-repeat;
   .article {
     @media (min-width: 641px) and (max-width: 960px) {
-      padding-left: 28px;
+      padding-left: 33px;
+    }
+    &__text {
+      @media (min-width: 641px) and (max-width: 960px) {
+        max-width: 390px;
+      }
     }
   }
   @media (max-width: 640px) {
@@ -114,6 +119,10 @@
       background-color: rgb(250, 250, 250);
     }
     @media (min-width: 641px) and (max-width: 960px) {
+      position: relative;
+      z-index: -1;
+      padding-top: 30px;
+      padding-bottom: 33px;
       background-color: rgb(255, 255, 255);
     }
     @media (min-width: 961px) {}
@@ -125,12 +134,18 @@
       padding: 51px 20px 53px;
       background-color: rgb(245, 244, 249);
     }
-    @media (min-width: 641px) and (max-width: 960px) {}
+    @media (min-width: 641px) and (max-width: 960px) {
+      position: relative;
+      z-index: -1;
+      padding-top: 30px;
+      padding-bottom: 33px;
+      background-color: rgb(245, 244, 249);
+    }
     @media (min-width: 961px) {}
   }
   &__growth {
     h3 span {
-      @media (max-width: 640px) {
+      @media (max-width: 960px) {
         color: rgb(135, 101, 221);
       }
     }
@@ -140,7 +155,13 @@
       padding: 48px 20px 53px;
       background-color: rgb(9, 12, 53);
     }
-    @media (min-width: 641px) and (max-width: 960px) {}
+    @media (min-width: 641px) and (max-width: 960px) {
+      position: relative;
+      z-index: -1;
+      padding-top: 33px;
+      padding-bottom: 34px;
+      background-color: rgb(9, 12, 53);
+    }
     @media (min-width: 961px) {}
   }
 }
