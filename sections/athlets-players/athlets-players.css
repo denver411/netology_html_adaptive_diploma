@@ -6,6 +6,11 @@
     padding-left: 291px;
   }
 }
+@media (min-width: 961px) {
+  .athlets .article {
+    padding-right: 10%;
+  }
+}
 @media (max-width: 640px) {
   .athlets {
     background-position: center 80px;
@@ -24,8 +29,11 @@
     background-image: url(../../images/footballer_566.png);
   }
 }
-.athlets__wrapper {
-  max-width: unset;
+@media (min-width: 961px) {
+  .athlets__wrapper {
+    max-width: unset;
+    padding-bottom: 50px;
+  }
 }
 @media (max-width: 640px) {
   .athlets__title {
@@ -113,7 +121,7 @@
   .athlets__growth {
     position: relative;
     z-index: -1;
-    padding: 48px 0 87px 52.5%;
+    padding: 48px 0 65px 52.5%;
     background-color: #5e42b0;
   }
 }
@@ -125,9 +133,19 @@
     padding-left: 33px;
   }
 }
+@media (min-width: 961px) {
+  .players .article {
+    padding-left: 10%;
+  }
+}
 @media (min-width: 641px) and (max-width: 960px) {
   .players .article__text {
     max-width: 390px;
+  }
+}
+@media (min-width: 961px) {
+  .players .article__text {
+    padding-right: 50%;
   }
 }
 @media (max-width: 640px) {
@@ -142,6 +160,19 @@
     background-image: url(../../images/basketballer_436.png);
   }
 }
+@media (min-width: 961px) {
+  .players {
+    background-position: 86.5% -30px;
+    background-image: url(../../images/basketballer_991.png);
+  }
+}
+@media (min-width: 961px) {
+  .players__wrapper {
+    max-width: unset;
+    position: relative;
+    z-index: -1;
+  }
+}
 @media (max-width: 640px) {
   .players__title {
     min-height: 303px;
@@ -152,6 +183,14 @@
   .players__title {
     padding-top: 58px;
     padding-left: 28px;
+  }
+}
+@media (min-width: 961px) {
+  .players__title {
+    position: relative;
+    z-index: -1;
+    padding-top: 40px;
+    padding-left: 9.5%;
   }
 }
 @media (max-width: 640px) {
@@ -173,6 +212,12 @@
     background-color: #ffffff;
   }
 }
+@media (min-width: 961px) {
+  .players__connection {
+    padding: 75px 0 90px;
+    background-color: #ffffff;
+  }
+}
 @media (max-width: 640px) {
   .players__collaboration {
     min-height: 192px;
@@ -187,6 +232,12 @@
     z-index: -1;
     padding-top: 30px;
     padding-bottom: 33px;
+    background-color: #f5f4f9;
+  }
+}
+@media (min-width: 961px) {
+  .players__collaboration {
+    padding: 45px 0 94px;
     background-color: #f5f4f9;
   }
 }
@@ -209,6 +260,12 @@
     z-index: -1;
     padding-top: 33px;
     padding-bottom: 34px;
+    background-color: #090c35;
+  }
+}
+@media (min-width: 961px) {
+  .players__growth {
+    padding: 50px 0 60px;
     background-color: #090c35;
   }
 }
@@ -248,7 +305,7 @@
 }
 @media (max-width: 640px) {
   .article__title span {
-    top: 5px;
+    top: 3px;
     font-size: 0.875rem;
     letter-spacing: 0.7px;
     border-bottom: solid 4px #5e42b0;

@@ -4,8 +4,8 @@
     @media (min-width: 641px) and (max-width: 960px) {
       padding-left: 291px;
     }
-    @media (min-width: 961px){
-
+    @media (min-width: 961px) {
+      padding-right: 10%;
     }
   }
   @media (max-width: 640px) {
@@ -21,7 +21,10 @@
     background-image: url(../../images/footballer_566.png);
   }
   &__wrapper {
-    max-width: unset;
+    @media (min-width: 961px) {
+      max-width: unset;
+      padding-bottom: 50px;
+    }
   }
   &__title {
     @media (max-width: 640px) {
@@ -51,7 +54,6 @@
       padding-bottom: 33px;
     }
     @media (min-width: 961px) {
-
       padding: 75px 0 56px 52.5%;
     }
   }
@@ -91,8 +93,8 @@
     }
     @media (min-width: 961px) {
       position: relative;
-      z-index: -1; 
-      padding: 48px 0 87px 52.5%;
+      z-index: -1;
+      padding: 48px 0 65px 52.5%;
       background-color: rgb(94, 66, 176);
     }
   }
@@ -104,9 +106,15 @@
     @media (min-width: 641px) and (max-width: 960px) {
       padding-left: 33px;
     }
+    @media (min-width: 961px) {
+      padding-left: 10%;
+    }
     &__text {
       @media (min-width: 641px) and (max-width: 960px) {
         max-width: 390px;
+      }
+      @media (min-width: 961px) {
+        padding-right: 50%;
       }
     }
   }
@@ -118,8 +126,17 @@
     background-position: right 40px;
     background-image: url(../../images/basketballer_436.png);
   }
-  @media (min-width: 961px) {}
-  &__wrapper {}
+  @media (min-width: 961px) {
+    background-position: 86.5% -30px;
+    background-image: url(../../images/basketballer_991.png);
+  }
+  &__wrapper {
+    @media (min-width: 961px) {
+      max-width: unset;
+      position: relative;
+      z-index: -1;
+    }
+  }
   &__title {
     @media (max-width: 640px) {
       min-height: 303px;
@@ -129,7 +146,12 @@
       padding-top: 58px;
       padding-left: 28px;
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+      position: relative;
+      z-index: -1;
+      padding-top: 40px;
+      padding-left: 9.5%;
+    }
   }
   &__connection {
     @media (max-width: 640px) {
@@ -147,7 +169,10 @@
       padding-bottom: 33px;
       background-color: rgb(255, 255, 255);
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+      padding: 75px 0 90px;
+      background-color: rgb(255, 255, 255);
+    }
   }
   &__collaboration {
     @media (max-width: 640px) {
@@ -163,7 +188,10 @@
       padding-bottom: 33px;
       background-color: rgb(245, 244, 249);
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+      padding: 45px 0 94px;
+      background-color: rgb(245, 244, 249);
+    }
   }
   &__growth {
     h3 span {
@@ -184,7 +212,10 @@
       padding-bottom: 34px;
       background-color: rgb(9, 12, 53);
     }
-    @media (min-width: 961px) {}
+    @media (min-width: 961px) {
+      padding: 50px 0 60px;
+      background-color: rgb(9, 12, 53);
+    }
   }
 }
 
@@ -214,13 +245,11 @@
     color: rgb(193, 193, 193);
     span {
       position: absolute;
-      
       left: 0;
       font-weight: bold;
       color: rgb(0, 0, 0);
-      
       @media (max-width: 640px) {
-        top: 5px;
+        top: 3px;
         font-size: 0.875rem;
         letter-spacing: 0.7px;
         border-bottom: solid 4px rgb(94, 66, 176);
@@ -252,7 +281,7 @@
     @media (min-width: 961px) {
       padding-left: 35px;
       font-size: 2.25rem;
-        letter-spacing: 1.8px;
+      letter-spacing: 1.8px;
     }
     &_growth {
       span {
