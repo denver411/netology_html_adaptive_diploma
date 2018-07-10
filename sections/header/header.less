@@ -28,8 +28,7 @@
     background-image: url(../../images/football_1280.jpg);
   }
   @media (min-width: 961px) {
-    min-height: 960px;
-    min-width: 1520px;
+    min-height: 960px; // min-width: 1520px;
     padding: 45px 0px 110px;
     background-image: url(../../images/football_1920.jpg);
   }
@@ -84,6 +83,12 @@
         text-align: right;
       }
     }
+  }
+}
+
+.logotype {
+  &__text {
+    visibility: hidden;
   }
 }
 
@@ -150,7 +155,7 @@
     }
   }
   &__title {
-    p {
+    span {
       font-weight: 300;
       @media (max-width: 640px) {}
     }

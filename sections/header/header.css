@@ -35,7 +35,6 @@
 @media (min-width: 961px) {
   .header {
     min-height: 960px;
-    min-width: 1520px;
     padding: 45px 0px 110px;
     background-image: url(../../images/football_1920.jpg);
   }
@@ -109,6 +108,9 @@
     margin-top: 0;
     text-align: right;
   }
+}
+.logotype__text {
+  visibility: hidden;
 }
 .applications {
   width: 100%;
@@ -188,7 +190,7 @@
     margin-right: 25px;
   }
 }
-.applications__title p {
+.applications__title span {
   font-weight: 300;
 }
 .applications__title h3 {
