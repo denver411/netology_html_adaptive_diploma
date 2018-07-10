@@ -1,0 +1,182 @@
+.main-section {
+  &__item {
+    position: relative;
+    @media (min-width: 961px) {
+      display: flex;
+      width: 100%;
+      max-width: 1920px;
+      margin: 0 auto;
+    }
+  }
+  &__counter {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94, 66, 176);
+    @media (max-width: 640px) {
+      left: 20px;
+      top: 293px;
+      width: 70px;
+      height: 70px;
+    }
+    @media (min-width: 641px) and (max-width: 960px) {
+      left: 33px;
+      top: 504px;
+      width: 116px;
+      height: 116px;
+    }
+    @media (min-width: 961px) {
+      left: ~"calc(50% - 84px)";
+      top: 211px;
+      width: 168px;
+      height: 155px;
+    }
+    span {
+      @media (max-width: 640px) {
+        font-size: 0.875rem;
+        font-weight: bold;
+        letter-spacing: 0.7px;
+        color: rgb(245, 246, 247);
+        line-height: 1.5;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+      }
+      @media (min-width: 641px) {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5;
+        letter-spacing: 1.2px;
+        text-align: center;
+        color: rgb(245, 246, 247);
+        border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  &__picture {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    @media (max-width: 640px) {
+      width: 100%;
+      min-height: 350px;
+    }
+    @media (min-width: 641px) and (max-width: 960px) {
+      width: 100%;
+      min-height: 585px;
+    }
+    @media (min-width: 961px) {
+      width: 50%;
+      min-height: 730px;
+    }
+    &_be-active {
+      @media (max-width: 640px) {
+        background-image: url(../../images/be-active_640.jpg);
+      }
+      @media (min-width: 641px) and (max-width: 960px) {
+        background-image: url(../../images/be-active_960.jpg);
+      }
+      @media (min-width: 961px) {
+        background-image: url(../../images/be-active_1024.jpg);
+      }
+    }
+    &_find-contact {
+      @media (max-width: 640px) {
+        background-image: url(../../images/find-contact_640.jpg);
+      }
+      @media (min-width: 641px) and (max-width: 960px) {
+        background-image: url(../../images/find-contact_960.jpg);
+      }
+      @media (min-width: 961px) {
+        background-image: url(../../images/find-contact_1024.jpg);
+        order: 2;
+      }
+    }
+    &_work-it {
+      @media (max-width: 640px) {
+        background-image: url(../../images/work-it_640.jpg);
+      }
+      @media (min-width: 641px) and (max-width: 960px) {
+        background-image: url(../../images/work-it_960.jpg);
+      }
+      @media (min-width: 961px) {
+        background-image: url(../../images/work-it_1024.jpg);
+      }
+    }
+  }
+  &__info {
+    @media (max-width: 640px) {
+      padding-top: 35px;
+      padding-bottom: 70px;
+    }
+    @media (min-width: 641px) and (max-width: 960px) {
+      padding-top: 80px;
+      padding-bottom: 100px;
+    }
+    @media (min-width: 961px) {
+      width: 50%;
+      padding-top: 260px;
+      padding-left: 128px;
+      padding-right: 130px;
+    }
+    &_find-contact{
+      @media (min-width: 961px) {
+        padding-left: 198px;
+      }
+    }
+  }
+  &__wrapper{
+    @media (min-width: 641px) and (max-width: 960px) {
+      padding: 0 33px;
+    }
+    @media (min-width: 961px) {
+      min-width: unset;
+      max-width: unset;
+      margin: 0;
+    }
+  }
+  &__title {
+    @media (max-width: 640px) {
+      font-size: 1.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      text-align: left;
+      color: rgb(231, 231, 231);
+    }
+    @media (min-width: 641px) and (max-width: 960px) {
+      font-size: 5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+      color: rgba(193, 193, 193, 0.4);
+    }
+    @media (min-width: 961px) {
+      font-size: 5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+      color: rgba(193, 193, 193, 0.4);
+    }
+  }
+  &__text {
+    @media (max-width: 640px) {
+      margin-top: 23px;
+      font-size: 1rem;
+      line-height: 1.25;
+      letter-spacing: 0.8px;
+      text-align: left;
+      color: rgb(0, 0, 0);
+    }
+    @media (min-width: 641px){
+      margin-top: 37px;
+      font-size: 1.5rem;
+      line-height: 1.17;
+      letter-spacing: 1.2px;
+      text-align: left;
+      color: rgb(0, 0, 0);
+    }
+    @media (min-width: 961px){
+      margin-top: 110px;
+    }
+  }
+}
