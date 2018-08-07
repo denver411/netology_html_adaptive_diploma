@@ -111,6 +111,7 @@
 }
 .logotype__text {
   visibility: hidden;
+  font-size: 0;
 }
 .applications {
   width: 100%;
@@ -131,7 +132,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 14px;
+  margin: 14px auto 0;
   color: #ffffff;
   text-align: left;
   text-transform: uppercase;
@@ -140,7 +141,7 @@
 }
 @media (max-width: 640px) {
   .applications__block {
-    width: 100%;
+    width: 280px;
     padding: 5px 82px;
     font-size: 0.5rem;
     border-radius: 38px;

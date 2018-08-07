@@ -1,4 +1,7 @@
 .main-section {
+  @media (min-width: 641px) and (max-width: 960px) {
+    padding-bottom: 12px;
+  }
   &__item {
     position: relative;
     @media (min-width: 961px) {
@@ -6,6 +9,13 @@
       width: 100%;
       max-width: 1920px;
       margin: 0 auto;
+    }
+    &_work-it {
+      .main-section__info {
+        @media (max-width: 640px) {
+          padding-bottom: 70px;
+        }
+      }
     }
   }
   &__counter {
@@ -105,26 +115,26 @@
   }
   &__info {
     @media (max-width: 640px) {
-      padding-top: 35px;
-      padding-bottom: 70px;
+      padding-top: 26px;
+      padding-bottom: 79px;
     }
     @media (min-width: 641px) and (max-width: 960px) {
-      padding-top: 80px;
-      padding-bottom: 100px;
+      padding-top: 62px;
+      padding-bottom: 95px;
     }
     @media (min-width: 961px) {
       width: 50%;
-      padding-top: 260px;
+      padding-top: 230px;
       padding-left: 128px;
       padding-right: 130px;
     }
-    &_find-contact{
+    &_find-contact {
       @media (min-width: 961px) {
         padding-left: 198px;
       }
     }
   }
-  &__wrapper{
+  &__wrapper {
     @media (min-width: 641px) and (max-width: 960px) {
       padding: 0 33px;
     }
@@ -160,23 +170,23 @@
   }
   &__text {
     @media (max-width: 640px) {
-      margin-top: 23px;
+      margin-top: 12px;
       font-size: 1rem;
       line-height: 1.25;
       letter-spacing: 0.8px;
       text-align: left;
       color: rgb(0, 0, 0);
     }
-    @media (min-width: 641px){
-      margin-top: 37px;
+    @media (min-width: 641px) {
+      margin-top: 10px;
       font-size: 1.5rem;
       line-height: 1.17;
       letter-spacing: 1.2px;
       text-align: left;
       color: rgb(0, 0, 0);
     }
-    @media (min-width: 961px){
-      margin-top: 110px;
+    @media (min-width: 961px) {
+      margin-top: 95px;
     }
   }
 }

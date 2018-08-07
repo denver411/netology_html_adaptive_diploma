@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +10,11 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-body{
+body {
   width: 100vw;
 }
 
-span{
+span {
   display: block;
 }
 
@@ -28,7 +27,7 @@ span{
   @media (max-width: 640px) {
     padding: 0 20px;
   }
-  @media (min-width: 961px){
+  @media (min-width: 961px) {
     min-width: 961px;
     max-width: 1534px;
     margin: 0 auto;
@@ -37,13 +36,14 @@ span{
 
 a {
   text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 // @import url('../sections/header/header.less');
+@media (max-width: 640px) {}
 
-@media (max-width: 640px){
-}
-@media (min-width: 641px) and (max-width: 960px) {
-}
-@media (min-width: 961px){
-}
+@media (min-width: 641px) and (max-width: 960px) {}
+
+@media (min-width: 961px) {}
