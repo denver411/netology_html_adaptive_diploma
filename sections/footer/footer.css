@@ -1,0 +1,19 @@
+@media (max-width: 640px) {
+  .footer {
+    min-height: 568px;
+    background-image: url(../../images/game_767.jpg);
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+  .footer {
+    min-height: 960px;
+    min-width: 660px;
+    background-image: url(../../images/game_1280.jpg);
+  }
+}
+@media (min-width: 961px) {
+  .footer {
+    min-height: 960px;
+    background-image: url(../../images/game_1920.jpg);
+  }
+}
