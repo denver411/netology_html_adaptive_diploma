@@ -38,18 +38,26 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    @media (max-width: 640px) {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    @media (min-width: 641px) and (max-width: 960px) {
+      max-width: 685px;
+      margin: 0 auto;
+    }
   }
   &__logotype {
     fill: rgb(255, 255, 255);
-    max-width: 205px;
+    // max-width: 205px;
     @media (max-width: 640px) {
-      min-width: 130px;
+      width: 130px;
     }
     @media (min-width: 641px) and (max-width: 960px) {
-      min-width: 205px;
+      width: 205px;
     }
     @media (min-width: 961px) {
-      min-width: 190px;
+      width: 190px;
     }
   }
   &__title {
@@ -156,11 +164,9 @@
     }
   }
   &__title {
-    span {
       font-weight: 300;
       @media (max-width: 640px) {}
-    }
-    h3 {
+    span {
       font-weight: bold;
       @media (max-width: 640px) {}
     }

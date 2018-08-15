@@ -25,13 +25,18 @@
 }
 @media (min-width: 961px) {
   .athlets {
-    background-position: 29% 28px;
+    background-position: 0 28px;
     background-image: url(../../images/footballer_566.png);
+  }
+}
+@media (min-width: 1301px) {
+  .athlets {
+    background-position: 29% 28px;
   }
 }
 @media (min-width: 961px) {
   .athlets__wrapper {
-    max-width: unset;
+    min-width: unset;
     padding-bottom: 50px;
   }
 }
@@ -59,8 +64,7 @@
     position: relative;
     z-index: -1;
     min-height: 213px;
-    margin: 0 -20px;
-    padding: 74px 20px 51px;
+    padding: 74px 0 51px;
     background-color: #fafafa;
   }
 }
@@ -77,8 +81,7 @@
 @media (max-width: 640px) {
   .athlets__collaboration {
     min-height: 262px;
-    margin: 0 -20px;
-    padding: 51px 20px 54px;
+    padding: 51px 0 54px;
     background-color: #f5f4f9;
   }
 }
@@ -105,8 +108,7 @@
 @media (max-width: 640px) {
   .athlets__growth {
     min-height: 228px;
-    margin: 0 -20px;
-    padding: 51px 20px 56px;
+    padding: 51px 0 56px;
   }
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -166,11 +168,14 @@
     background-image: url(../../images/basketballer_991.png);
   }
 }
+@media (min-width: 1301px) {
+  .players {
+    background-position: 86.5% -5px;
+  }
+}
 @media (min-width: 961px) {
   .players__wrapper {
-    max-width: unset;
-    position: relative;
-    z-index: -1;
+    min-width: unset;
   }
 }
 @media (max-width: 640px) {
@@ -198,31 +203,25 @@
     position: relative;
     z-index: -1;
     min-height: 251px;
-    margin: 0 -20px;
-    padding: 74px 20px 56px;
+    padding: 74px 0 56px;
     background-color: #fafafa;
   }
 }
 @media (min-width: 641px) and (max-width: 960px) {
   .players__connection {
-    position: relative;
-    z-index: -1;
     padding-top: 30px;
     padding-bottom: 33px;
-    background-color: #ffffff;
   }
 }
 @media (min-width: 961px) {
   .players__connection {
     padding: 75px 0 90px;
-    background-color: #ffffff;
   }
 }
 @media (max-width: 640px) {
   .players__collaboration {
     min-height: 192px;
-    margin: 0 -20px;
-    padding: 51px 20px 53px;
+    padding: 51px 0 53px;
     background-color: #f5f4f9;
   }
 }
@@ -237,20 +236,19 @@
 }
 @media (min-width: 961px) {
   .players__collaboration {
+    position: relative;
+    z-index: -1;
     padding: 45px 0 94px;
     background-color: #f5f4f9;
   }
 }
-@media (max-width: 960px) {
-  .players__growth h3 span {
-    color: #8765dd;
-  }
+.players__growth span {
+  color: #8765dd;
 }
 @media (max-width: 640px) {
   .players__growth {
     min-height: 189px;
-    margin: 0 -20px;
-    padding: 48px 20px 53px;
+    padding: 48px 0 53px;
     background-color: #090c35;
   }
 }
@@ -265,6 +263,8 @@
 }
 @media (min-width: 961px) {
   .players__growth {
+    position: relative;
+    z-index: -1;
     padding: 50px 0 60px;
     background-color: #090c35;
   }
@@ -297,37 +297,6 @@
   text-transform: uppercase;
   color: #c1c1c1;
 }
-.article__title span {
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-  color: #000000;
-}
-@media (max-width: 640px) {
-  .article__title span {
-    top: 3px;
-    font-size: 0.875rem;
-    letter-spacing: 0.7px;
-    border-bottom: solid 4px #5e42b0;
-  }
-}
-@media (min-width: 641px) and (max-width: 960px) {
-  .article__title span {
-    top: 5px;
-    font-size: 1.125rem;
-    letter-spacing: 0.9px;
-    border-bottom: solid 5px #5e42b0;
-  }
-}
-@media (min-width: 961px) {
-  .article__title span {
-    top: 6px;
-    padding-bottom: 3px;
-    font-size: 1.125rem;
-    letter-spacing: 0.9px;
-    border-bottom: solid 5px #5e42b0;
-  }
-}
 @media (max-width: 640px) {
   .article__title {
     padding-left: 25px;
@@ -349,7 +318,39 @@
     letter-spacing: 1.8px;
   }
 }
-.article__title_growth span {
+.article__count {
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #000000;
+  border-bottom-left-radius: 2px;
+}
+@media (max-width: 640px) {
+  .article__count {
+    top: 3px;
+    font-size: 0.875rem;
+    letter-spacing: 0.7px;
+    border-bottom: solid 4px #5e42b0;
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+  .article__count {
+    top: 5px;
+    font-size: 1.125rem;
+    letter-spacing: 0.9px;
+    border-bottom: solid 5px #5e42b0;
+  }
+}
+@media (min-width: 961px) {
+  .article__count {
+    top: 11px;
+    padding-bottom: 3px;
+    font-size: 1.125rem;
+    letter-spacing: 0.9px;
+    border-bottom: solid 5px #5e42b0;
+  }
+}
+.article__count_growth {
   border-bottom: solid 4px #ffffff;
 }
 .article__text {
