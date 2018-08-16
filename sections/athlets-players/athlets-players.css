@@ -23,11 +23,11 @@
 @media (min-width: 961px) {
   .athlets {
     padding-bottom: 50px;
-    background-position: 0 28px;
+    background-position: calc(100% - 690px) 28px;
     background-image: url(../../images/footballer_566.png);
   }
 }
-@media (min-width: 1301px) {
+@media (min-width: 1550px) {
   .athlets {
     background-position: 29% 28px;
   }
@@ -159,6 +159,11 @@
     background-image: url(../../images/basketballer_436.png);
   }
 }
+@media (max-width: 730px) {
+  .players {
+    background-position-x: 294px;
+  }
+}
 @media (min-width: 961px) {
   .players {
     background-position: 270px -5px;
@@ -168,6 +173,11 @@
 @media (min-width: 1301px) {
   .players {
     background-position: 86.5% -5px;
+  }
+}
+@media (max-width: 1300px) and (min-width: 960px) {
+  .players {
+    background-position-x: 315px;
   }
 }
 @media (min-width: 961px) {
