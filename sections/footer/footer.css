@@ -27,8 +27,6 @@
 @media (min-width: 641px) and (max-width: 960px) {
   .footer {
     min-height: 960px;
-    min-width: 660px;
-    padding-top: 99px;
     background-image: url(../../images/game_1280.jpg);
   }
 }
@@ -91,7 +89,7 @@
   .footer__logotype {
     height: 137px;
     width: 130px;
-    margin-top: 28px;
+    margin-top: 125px;
     margin-bottom: 70px;
     border-radius: 30px;
   }
@@ -103,6 +101,17 @@
     border-radius: 30px;
   }
 }
+.footer__logotype_bottom {
+  display: block;
+  height: unset;
+  padding: 0;
+  margin: 0;
+  background-color: unset;
+}
+.footer__logotype_bottom svg {
+  width: unset;
+  height: unset;
+}
 @media (max-width: 640px) {
   .footer__logotype_bottom {
     height: 36px;
@@ -111,6 +120,7 @@
 }
 @media (min-width: 641px) and (max-width: 960px) {
   .footer__logotype_bottom {
+    width: 205px;
     margin-top: 55px;
   }
 }

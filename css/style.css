@@ -25,7 +25,7 @@ span {
 }
 @media (min-width: 961px) {
   .wrapper {
-    min-width: 961px;
+    min-width: 921px;
     max-width: 1534px;
     margin: 0 auto;
   }

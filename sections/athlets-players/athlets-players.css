@@ -7,9 +7,6 @@
   }
 }
 @media (min-width: 961px) {
-  .athlets .article {
-    padding-right: 10%;
-  }
 }
 @media (max-width: 640px) {
   .athlets {
@@ -25,6 +22,7 @@
 }
 @media (min-width: 961px) {
   .athlets {
+    padding-bottom: 50px;
     background-position: 0 28px;
     background-image: url(../../images/footballer_566.png);
   }
@@ -36,8 +34,7 @@
 }
 @media (min-width: 961px) {
   .athlets__wrapper {
-    min-width: unset;
-    padding-bottom: 50px;
+    padding: 0 20px;
   }
 }
 @media (max-width: 640px) {
@@ -55,8 +52,8 @@
 }
 @media (min-width: 961px) {
   .athlets__title {
+    margin-left: 53%;
     padding-top: 88px;
-    padding-left: 52.5%;
   }
 }
 @media (max-width: 640px) {
@@ -75,7 +72,8 @@
 }
 @media (min-width: 961px) {
   .athlets__connection {
-    padding: 75px 0 56px 52.5%;
+    padding-top: 73px;
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 640px) {
@@ -98,7 +96,8 @@
   .athlets__collaboration {
     position: relative;
     z-index: -1;
-    padding: 48px 0 94px 52.5%;
+    padding-top: 48px;
+    padding-bottom: 53px;
     background-color: #f5f4f9;
   }
 }
@@ -123,7 +122,8 @@
   .athlets__growth {
     position: relative;
     z-index: -1;
-    padding: 48px 0 65px 52.5%;
+    padding-top: 48px;
+    padding-bottom: 50px;
     background-color: #5e42b0;
   }
 }
@@ -136,9 +136,6 @@
   }
 }
 @media (min-width: 961px) {
-  .players .article {
-    padding-left: 10%;
-  }
 }
 @media (min-width: 641px) and (max-width: 960px) {
   .players .article__text {
@@ -175,7 +172,8 @@
 }
 @media (min-width: 961px) {
   .players__wrapper {
-    min-width: unset;
+    max-width: 1574px;
+    padding: 0 20px;
   }
 }
 @media (max-width: 640px) {
@@ -195,7 +193,6 @@
     position: relative;
     z-index: -1;
     padding-top: 40px;
-    padding-left: 9.5%;
   }
 }
 @media (max-width: 640px) {
@@ -215,7 +212,8 @@
 }
 @media (min-width: 961px) {
   .players__connection {
-    padding: 75px 0 90px;
+    padding-top: 75px;
+    padding-bottom: 55px;
   }
 }
 @media (max-width: 640px) {
@@ -238,7 +236,8 @@
   .players__collaboration {
     position: relative;
     z-index: -1;
-    padding: 45px 0 94px;
+    padding-top: 45px;
+    padding-bottom: 87px;
     background-color: #f5f4f9;
   }
 }
@@ -265,7 +264,8 @@
   .players__growth {
     position: relative;
     z-index: -1;
-    padding: 50px 0 60px;
+    padding-top: 50px;
+    padding-bottom: 56px;
     background-color: #090c35;
   }
 }
@@ -318,6 +318,23 @@
     letter-spacing: 1.8px;
   }
 }
+@media (min-width: 641px) and (max-width: 960px) {
+  .article__title h3 {
+    font-size: 2rem;
+    letter-spacing: 1.6px;
+  }
+}
+@media (min-width: 961px) {
+  .article__title h3 {
+    font-size: 2.25rem;
+    letter-spacing: 1.8px;
+  }
+}
+@media (min-width: 961px) {
+  .article__title_athlets {
+    margin-left: 53%;
+  }
+}
 .article__count {
   position: absolute;
   left: 0;
@@ -367,17 +384,23 @@
 @media (min-width: 641px) and (max-width: 960px) {
   .article__text {
     margin-top: 16px;
+    padding-right: 45px;
     font-size: 1rem;
     line-height: 1.75;
   }
 }
 @media (min-width: 961px) {
   .article__text {
-    margin-top: 16px;
-    font-size: 1rem;
-    line-height: normal;
+    margin-top: 17px;
+    font-size: 1.25rem;
+    line-height: 1.4;
   }
 }
 .article__text_growth {
   color: #ffffff;
+}
+@media (min-width: 961px) {
+  .article__text_athlets {
+    margin-left: 53%;
+  }
 }

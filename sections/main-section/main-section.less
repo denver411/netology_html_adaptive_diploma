@@ -1,13 +1,13 @@
 .main-section {
   @media (min-width: 641px) and (max-width: 960px) {
-    padding-bottom: 12px;
+    padding-bottom: 7px;
   }
   &__item {
     position: relative;
     @media (min-width: 961px) {
       display: flex;
       width: 100%;
-      max-width: 1920px;
+      // max-width: 1920px;
       margin: 0 auto;
     }
     &_work-it {
@@ -32,7 +32,7 @@
     }
     @media (min-width: 641px) and (max-width: 960px) {
       left: 33px;
-      top: 504px;
+      top: 494px;
       width: 116px;
       height: 116px;
     }
@@ -120,17 +120,19 @@
     }
     @media (min-width: 641px) and (max-width: 960px) {
       padding-top: 62px;
-      padding-bottom: 95px;
+      padding-bottom: 97px;
     }
     @media (min-width: 961px) {
       width: 50%;
       padding-top: 230px;
-      padding-left: 128px;
-      padding-right: 130px;
+      // padding-left: 128px;
+      // padding-right: 130px;
     }
     &_find-contact {
       @media (min-width: 961px) {
-        padding-left: 198px;
+        // padding-left: 198px;
+        margin-left: auto;
+    max-width: 895px;
       }
     }
   }
@@ -140,8 +142,13 @@
     }
     @media (min-width: 961px) {
       min-width: unset;
-      max-width: unset;
+      max-width: 770px;
       margin: 0;
+      padding-left: 126px;
+      margin-right: 20px;
+    }
+    &_find-contact{
+      margin-right: 90px;
     }
   }
   &__title {
@@ -161,11 +168,14 @@
       color: rgba(193, 193, 193, 0.4);
     }
     @media (min-width: 961px) {
-      font-size: 5rem;
+      font-size: 3.5rem;
       font-weight: bold;
       text-transform: uppercase;
       text-align: left;
       color: rgba(193, 193, 193, 0.4);
+    }
+    @media (min-width: 1240px){
+      font-size: 5rem;
     }
   }
   &__text {
@@ -187,6 +197,11 @@
     }
     @media (min-width: 961px) {
       margin-top: 95px;
+    }
+    &_find-contact{
+      @media (min-width: 961px) {
+        margin-top: 55px;
+      } 
     }
   }
 }
