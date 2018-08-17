@@ -164,7 +164,7 @@
     background-position-x: 294px;
   }
 }
-@media (min-width: 961px) {
+@media (min-width: 960px) {
   .players {
     background-position: 270px -5px;
     background-image: url(../../images/basketballer_991.png);
@@ -354,10 +354,9 @@
 }
 @media (max-width: 640px) {
   .article__count {
-    top: 3px;
+    top: 6px;
     font-size: 0.875rem;
     letter-spacing: 0.7px;
-    border-bottom: solid 4px #5e42b0;
   }
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -365,7 +364,6 @@
     top: 5px;
     font-size: 1.125rem;
     letter-spacing: 0.9px;
-    border-bottom: solid 5px #5e42b0;
   }
 }
 @media (min-width: 961px) {
@@ -374,11 +372,18 @@
     padding-bottom: 3px;
     font-size: 1.125rem;
     letter-spacing: 0.9px;
-    border-bottom: solid 5px #5e42b0;
   }
 }
 .article__count_growth {
-  border-bottom: solid 4px #ffffff;
+  color: #0000ff;
+}
+.article__underline {
+  height: 4px;
+  border-radius: 1.5px;
+  background-color: #5e42b0;
+}
+.article__underline_growth {
+  background-color: #ffffff;
 }
 .article__text {
   text-align: left;

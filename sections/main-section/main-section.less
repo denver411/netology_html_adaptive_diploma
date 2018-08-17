@@ -6,8 +6,7 @@
     position: relative;
     @media (min-width: 961px) {
       display: flex;
-      width: 100%;
-      // max-width: 1920px;
+      width: 100%; // max-width: 1920px;
       margin: 0 auto;
     }
     &_work-it {
@@ -21,6 +20,7 @@
   &__counter {
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(94, 66, 176);
@@ -48,8 +48,7 @@
         font-weight: bold;
         letter-spacing: 0.7px;
         color: rgb(245, 246, 247);
-        line-height: 1.5;
-        border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+        line-height: 1.5; // border-bottom: 4px solid rgba(255, 255, 255, 0.3);
       }
       @media (min-width: 641px) {
         font-size: 1.5rem;
@@ -57,9 +56,19 @@
         line-height: 1.5;
         letter-spacing: 1.2px;
         text-align: center;
-        color: rgb(245, 246, 247);
-        border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+        color: rgb(245, 246, 247); // border-bottom: 5px solid rgba(255, 255, 255, 0.3);
       }
+    }
+  }
+  &__underline {
+    height: 4px;
+    border-radius: 1.5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    @media (max-width: 640px) {
+      width: 16px;
+    }
+    @media (min-width: 641px) {
+      width: 22px;
     }
   }
   &__picture {
@@ -124,15 +133,14 @@
     }
     @media (min-width: 961px) {
       width: 50%;
-      padding-top: 230px;
-      // padding-left: 128px;
+      padding-top: 230px; // padding-left: 128px;
       // padding-right: 130px;
     }
     &_find-contact {
       @media (min-width: 961px) {
         // padding-left: 198px;
         margin-left: auto;
-    max-width: 895px;
+        max-width: 895px;
       }
     }
   }
@@ -147,7 +155,7 @@
       padding-left: 126px;
       margin-right: 20px;
     }
-    &_find-contact{
+    &_find-contact {
       margin-right: 90px;
     }
   }
@@ -174,7 +182,7 @@
       text-align: left;
       color: rgba(193, 193, 193, 0.4);
     }
-    @media (min-width: 1240px){
+    @media (min-width: 1240px) {
       font-size: 5rem;
     }
   }
@@ -198,10 +206,10 @@
     @media (min-width: 961px) {
       margin-top: 95px;
     }
-    &_find-contact{
+    &_find-contact {
       @media (min-width: 961px) {
         margin-top: 55px;
-      } 
+      }
     }
   }
 }

@@ -134,7 +134,7 @@
   @media (max-width: 730px) {
     background-position-x: 294px;
   }
-  @media (min-width: 961px) {
+  @media (min-width: 960px) {
     background-position: 270px -5px;
     background-image: url(../../images/basketballer_991.png);
   }
@@ -276,7 +276,7 @@
       letter-spacing: 1.8px;
     }
     h3 {
-      @media (min-width: 641px) and (max-width: 960px){
+      @media (min-width: 641px) and (max-width: 960px) {
         font-size: 2rem;
         letter-spacing: 1.6px;
       }
@@ -298,26 +298,34 @@
     color: rgb(0, 0, 0);
     border-bottom-left-radius: 2px;
     @media (max-width: 640px) {
-      top: 3px;
+      top: 6px;
       font-size: 0.875rem;
-      letter-spacing: 0.7px;
-      border-bottom: solid 4px rgb(94, 66, 176);
+      letter-spacing: 0.7px; // border-bottom: solid 4px rgb(94, 66, 176);
     }
     @media (min-width: 641px) and (max-width: 960px) {
       top: 5px;
       font-size: 1.125rem;
-      letter-spacing: 0.9px;
-      border-bottom: solid 5px rgb(94, 66, 176);
+      letter-spacing: 0.9px; // border-bottom: solid 5px rgb(94, 66, 176);
     }
     @media (min-width: 961px) {
       top: 11px;
       padding-bottom: 3px;
       font-size: 1.125rem;
-      letter-spacing: 0.9px;
-      border-bottom: solid 5px rgb(94, 66, 176);
+      letter-spacing: 0.9px; // border-bottom: solid 5px rgb(94, 66, 176);
     }
     &_growth {
-      border-bottom: solid 4px rgb(255, 255, 255);
+      color: rgb(0, 0, 255);
+    }
+  }
+  &__underline {
+    height: 4px;
+    border-radius: 1.5px;
+    background-color: rgb(94, 66, 176);
+    @media (max-width: 640px) {}
+    @media (min-width: 641px) and (max-width: 960px) {}
+    @media (min-width: 961px) {}
+    &_growth {
+      background-color: rgb(255, 255, 255);
     }
   }
   &__text {
